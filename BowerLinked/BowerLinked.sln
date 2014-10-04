@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BowerLinked", "BowerLinked\BowerLinked.csproj", "{E110600D-5A49-437B-AA3E-67D2AACB6309}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E110600D-5A49-437B-AA3E-67D2AACB6309}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E110600D-5A49-437B-AA3E-67D2AACB6309}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E110600D-5A49-437B-AA3E-67D2AACB6309}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E110600D-5A49-437B-AA3E-67D2AACB6309}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = BowerLinked\BowerLinked.csproj
+	EndGlobalSection
+EndGlobal

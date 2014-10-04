@@ -1,0 +1,37 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>BowerLinkedUi</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <base href="/">
+
+    <link rel="stylesheet" href="bower_components/assets/assets/vendor.css">
+    <link rel="stylesheet" href="bower_components/assets/assets/bower-linked-ui.css">
+    
+    @{
+    	for(var x = 0; x < 5; x++){
+    	<p>this is a test</p>
+    	}
+    
+    }
+    
+  </head>
+  <body>
+    <script>
+      window.EmberENV = {"modulePrefix":"bower-linked-ui","environment":"development","baseURL":"bower_components/assets/","locationType":"auto","EmberENV":{"FEATURES":{}},"APP":{"LOG_ACTIVE_GENERATION":true,"LOG_VIEW_LOOKUPS":true}};
+    </script>
+    <script src="bower_components/assets/assets/vendor.js"></script>
+    <script src="bower_components/assets/assets/bower-linked-ui.js"></script>
+    <script>
+      window.BowerLinkedUi = require('bower-linked-ui/app')['default'].create({"LOG_ACTIVE_GENERATION":true,"LOG_VIEW_LOOKUPS":true});
+    </script>
+  </body>
+</html>

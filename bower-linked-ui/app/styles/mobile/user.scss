@@ -1,0 +1,350 @@
+// styles that apply to the user page
+
+.user-preferences {
+  .control-group {
+    // border-bottom: 1px solid #e5e5e5;
+    padding: 8px 36px 8px 8px;
+  }
+  .control-label {
+    font-weight: bold;
+  }
+  textarea {
+    width: 530px;
+    height: 100px;
+  }
+  .static {
+    color: $primary;
+    margin-top: 5px;
+    margin-left: 5px;
+    display: inline-block;
+  }
+  .instructions {
+    color: $primary;
+    margin-top: 5px;
+  }
+  .category-controls {
+    padding-top: 8px;
+  }
+  .avatar {
+    margin-left: 3px;
+  }
+  .instructions a[href] {
+    color: $primary;
+  }
+  .warning {
+    @include border-radius-all(6px);
+    background-color: $danger;
+    padding: 5px 8px;
+    color: $primary;
+    width: 520px;
+  }
+
+  .other .controls-dropdown {
+    margin-top: 10px;
+    padding-left: 5px;
+    select {
+      width: 280px;
+    }
+  }
+
+  .save-button {
+    width: 100%;
+    overflow: auto;
+    max-width: 200px;
+    button {
+      display: block;
+    }
+  }
+
+  .checkbox-label {
+    overflow: auto;
+    display: block;
+    width: 100%;
+    padding: 5px 8px;
+  }
+
+  .bio-composer #wmd-quote-post {
+    display: none;
+  }
+}
+
+#about-me {
+  padding: 4px;
+  margin: -4px;
+  display: block;
+  width: 220px;
+  min-height: 200px;
+  background-color: scale-color-diff();
+  color: $primary;
+  word-wrap: break-word;
+}
+
+.user-navigation {
+
+  h3 {
+    color: scale-color($primary, $lightness: 50%);
+    padding-left: 5px;
+  }
+  .nav-stacked {
+    border-left: 0;
+    border-right: 0;
+  }
+
+}
+
+.user-main {
+  clear: both;
+  margin-bottom: 50px;
+
+  .about {
+    background-color: scale-color-diff();
+    background-position: center center;
+    background-size: cover;
+    margin-bottom: 10px;
+    overflow: hidden;
+    color: $primary;
+
+    .details {
+      text-align: center;
+      padding: 10px;
+
+      h1 {
+        font-size: 30px;
+        font-weight: normal;
+      }
+
+      h2 {
+        font-size: 20px;
+        margin-bottom: 6px;
+        font-weight: normal;
+        max-width: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      a[href] {
+        color: $primary;
+      }
+
+      img.avatar {
+        border: 3px solid scale-color-diff();
+        margin-bottom: 4px;
+      }
+
+      .primary {
+        color: $secondary;
+        text-shadow: rgba(0, 0, 0, 0.5) 0 1px 1px;
+        max-height: 800px;
+        overflow: auto;
+
+        a[href] {
+          color: $secondary;
+          text-decoration: underline;
+          text-shadow: rgba(0, 0, 0, 0.5) 0 1px 1px;
+        }
+
+        img {
+          max-width: 100%;
+        }
+
+        .primary-textual {
+          width: 90%;
+          margin: 0 auto;
+          padding: 4px;
+
+          h1, h2 {
+            margin: 7px;
+          }
+        }
+      }
+
+      .secondary {
+        background-color: $primary;
+        text-align: left;
+        padding: 1px 10px;
+
+        dd {
+          color: $secondary;
+          margin: 0 0 7px 0;
+          a {
+            color: inherit;
+          }
+        }
+        dt {
+          color: scale-color($primary, $lightness: 75%);
+          margin: 0;
+        }
+      }
+    }
+
+    .controls {
+      background-color: scale-color($primary, $lightness: 75%);
+      margin-top: 0;
+      padding: 10px 10px 0 10px;
+
+      .btn {
+        margin-bottom: 10px;
+        float: none;
+      }
+    }
+  }
+
+  .about.collapsed-info {
+    .controls {
+      margin-top: 0;
+    }
+
+    .details {
+      .secondary { display: none; }
+      .bio { display: none; }
+
+      .primary {
+        width: 100%;
+        text-align: left;
+        margin-top: 4px;
+
+        .avatar {
+          float: left;
+          margin-right: 10px;
+          border: 2px solid $tertiary;
+          width: 45px;
+          height: 45px;
+        }
+
+        h1 {
+          margin:0;
+          font-size: 20px;
+          line-height: 22px;
+        }
+
+        h2 {
+          font-size: 17px;
+          line-height: 16px;
+          margin-top: 4px;
+        }
+      }
+    }
+  }
+
+  .user-stream {
+    .excerpt {
+      margin: 5px 0;
+      font-size: 13px;
+      word-wrap: break-word;
+      color: scale-color($primary, $lightness: 50%);
+    }
+    .item.moderator-action {
+      background-color:  scale-color($highlight, $lightness: 50%);
+    }
+    .item.deleted {
+      opacity: 0.8;
+      background-color: scale-color($danger, $lightness: 50%);
+    }
+    .item.hidden {
+      display: block;
+      opacity: 0.4;
+    }
+    .item {
+      padding: 10px 8px;
+      background-color: $secondary;
+      border-bottom: 1px solid scale-color-diff();
+    }
+    .type {
+      color: scale-color($primary, $lightness: 50%);
+    }
+    span.name {
+      color: scale-color($primary, $lightness: 50%);
+    }
+    .time, .delete-info {
+      display: block;
+      float: right;
+      color: $primary;
+      margin-right: 8px;
+      font-size: 11px;
+    }
+    .delete-info i {
+      font-size: 14px;
+    }
+    .avatar-link {
+      float: left;
+      margin-right: 10px;
+    }
+    .title {
+      display: block;
+      margin-bottom: 4px;
+      font-size: 14px;
+    }
+    .edit-reason {
+      background-color: scale-color($highlight, $lightness: 50%);
+      padding: 3px 5px 5px 5px;
+    }
+    .remove-bookmark {
+      float: right !important;
+      margin-top: -8px;
+    }
+    .notification {
+      padding: 0 8px;
+      li { display: inline-block; }
+      p {
+        display: inline-block;
+        margin: 7px;
+        span {
+          color: $primary;
+        }
+      }
+      .time {
+        display: inline-block;
+        margin: 0;
+        float: none;
+      }
+      // common/base/header.scss
+      .fa, .icon {
+        color: scale-color($primary, $lightness: 50%);
+      }
+    }
+  }
+
+  .staff-counters {
+    text-align: center;
+    div {
+      padding: 2px 8px;
+      margin-bottom: 10px;
+      display: inline-block;
+    }
+    a.active {
+      font-weight: bold;
+    }
+  }
+
+  .pill {
+    border-radius: 15px;
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 30px;
+  }
+  .helpful-flags {
+    background-color: green;
+  }
+  .flagged-posts {
+    background-color: #E49735;
+  }
+  .deleted-posts {
+    background-color: #EC441B;
+  }
+  .suspensions {
+    background-color: #c22020;
+  }
+
+  div#pagedown-editor {
+    width: 100%;
+  }
+
+  textarea#wmd-input {
+    width: 100%;
+  }
+
+}
